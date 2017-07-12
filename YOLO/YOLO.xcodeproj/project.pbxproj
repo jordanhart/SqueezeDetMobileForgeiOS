@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B711C871ECC8B13001CB7C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B711C851ECC8B13001CB7C2 /* Main.storyboard */; };
+		7B711C891ECC8B13001CB7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B711C881ECC8B13001CB7C2 /* Assets.xcassets */; };
+		7B711C961ECC8B33001CB7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B711C941ECC8B33001CB7C2 /* AppDelegate.swift */; };
+		7B711C971ECC8B33001CB7C2 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B711C951ECC8B33001CB7C2 /* VideoCapture.swift */; };
+		7B711C9D1ECC8BBD001CB7C2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B711C9B1ECC8BBD001CB7C2 /* CameraViewController.swift */; };
+		7B711C9E1ECC8BBD001CB7C2 /* YOLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B711C9C1ECC8BBD001CB7C2 /* YOLO.swift */; };
+		7B711CA01ECC8BF9001CB7C2 /* Forge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B711C9F1ECC8BF9001CB7C2 /* Forge.framework */; };
+		7B711CA11ECC8BF9001CB7C2 /* Forge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B711C9F1ECC8BF9001CB7C2 /* Forge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B711CF31ECDA2D4001CB7C2 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B711CF21ECDA2D4001CB7C2 /* BoundingBox.swift */; };
+		A50D303C1EF9CB8F006BB5F3 /* conv1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D2FFC1EF9CB8F006BB5F3 /* conv1_b.bin */; };
+		A50D303D1EF9CB8F006BB5F3 /* conv1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D2FFD1EF9CB8F006BB5F3 /* conv1_W.bin */; };
+		A50D303E1EF9CB8F006BB5F3 /* conv12_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D2FFE1EF9CB8F006BB5F3 /* conv12_b.bin */; };
+		A50D303F1EF9CB8F006BB5F3 /* conv12_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D2FFF1EF9CB8F006BB5F3 /* conv12_W.bin */; };
+		A50D30401EF9CB8F006BB5F3 /* fire2_expand1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30001EF9CB8F006BB5F3 /* fire2_expand1x1_b.bin */; };
+		A50D30411EF9CB8F006BB5F3 /* fire2_expand1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30011EF9CB8F006BB5F3 /* fire2_expand1x1_W.bin */; };
+		A50D30421EF9CB8F006BB5F3 /* fire2_expand3x3_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30021EF9CB8F006BB5F3 /* fire2_expand3x3_b.bin */; };
+		A50D30431EF9CB8F006BB5F3 /* fire2_expand3x3_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30031EF9CB8F006BB5F3 /* fire2_expand3x3_W.bin */; };
+		A50D30441EF9CB8F006BB5F3 /* fire2_squeeze1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30041EF9CB8F006BB5F3 /* fire2_squeeze1x1_b.bin */; };
+		A50D30451EF9CB8F006BB5F3 /* fire2_squeeze1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30051EF9CB8F006BB5F3 /* fire2_squeeze1x1_W.bin */; };
+		A50D30461EF9CB8F006BB5F3 /* fire3_expand1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30061EF9CB8F006BB5F3 /* fire3_expand1x1_b.bin */; };
+		A50D30471EF9CB8F006BB5F3 /* fire3_expand1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30071EF9CB8F006BB5F3 /* fire3_expand1x1_W.bin */; };
+		A50D30481EF9CB8F006BB5F3 /* fire3_expand3x3_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30081EF9CB8F006BB5F3 /* fire3_expand3x3_b.bin */; };
+		A50D30491EF9CB8F006BB5F3 /* fire3_expand3x3_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30091EF9CB8F006BB5F3 /* fire3_expand3x3_W.bin */; };
+		A50D304A1EF9CB8F006BB5F3 /* fire3_squeeze1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D300A1EF9CB8F006BB5F3 /* fire3_squeeze1x1_b.bin */; };
+		A50D304B1EF9CB8F006BB5F3 /* fire3_squeeze1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D300B1EF9CB8F006BB5F3 /* fire3_squeeze1x1_W.bin */; };
+		A50D304C1EF9CB8F006BB5F3 /* fire4_expand1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D300C1EF9CB8F006BB5F3 /* fire4_expand1x1_b.bin */; };
+		A50D304D1EF9CB8F006BB5F3 /* fire4_expand1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D300D1EF9CB8F006BB5F3 /* fire4_expand1x1_W.bin */; };
+		A50D304E1EF9CB8F006BB5F3 /* fire4_expand3x3_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D300E1EF9CB8F006BB5F3 /* fire4_expand3x3_b.bin */; };
+		A50D304F1EF9CB8F006BB5F3 /* fire4_expand3x3_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D300F1EF9CB8F006BB5F3 /* fire4_expand3x3_W.bin */; };
+		A50D30501EF9CB8F006BB5F3 /* fire4_squeeze1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30101EF9CB8F006BB5F3 /* fire4_squeeze1x1_b.bin */; };
+		A50D30511EF9CB8F006BB5F3 /* fire4_squeeze1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30111EF9CB8F006BB5F3 /* fire4_squeeze1x1_W.bin */; };
+		A50D30521EF9CB8F006BB5F3 /* fire5_expand1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30121EF9CB8F006BB5F3 /* fire5_expand1x1_b.bin */; };
+		A50D30531EF9CB8F006BB5F3 /* fire5_expand1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30131EF9CB8F006BB5F3 /* fire5_expand1x1_W.bin */; };
+		A50D30541EF9CB8F006BB5F3 /* fire5_expand3x3_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30141EF9CB8F006BB5F3 /* fire5_expand3x3_b.bin */; };
+		A50D30551EF9CB8F006BB5F3 /* fire5_expand3x3_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30151EF9CB8F006BB5F3 /* fire5_expand3x3_W.bin */; };
+		A50D30561EF9CB8F006BB5F3 /* fire5_squeeze1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30161EF9CB8F006BB5F3 /* fire5_squeeze1x1_b.bin */; };
+		A50D30571EF9CB8F006BB5F3 /* fire5_squeeze1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30171EF9CB8F006BB5F3 /* fire5_squeeze1x1_W.bin */; };
+		A50D30581EF9CB8F006BB5F3 /* fire6_expand1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30181EF9CB8F006BB5F3 /* fire6_expand1x1_b.bin */; };
+		A50D30591EF9CB8F006BB5F3 /* fire6_expand1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30191EF9CB8F006BB5F3 /* fire6_expand1x1_W.bin */; };
+		A50D305A1EF9CB8F006BB5F3 /* fire6_expand3x3_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D301A1EF9CB8F006BB5F3 /* fire6_expand3x3_b.bin */; };
+		A50D305B1EF9CB8F006BB5F3 /* fire6_expand3x3_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D301B1EF9CB8F006BB5F3 /* fire6_expand3x3_W.bin */; };
+		A50D305C1EF9CB8F006BB5F3 /* fire6_squeeze1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D301C1EF9CB8F006BB5F3 /* fire6_squeeze1x1_b.bin */; };
+		A50D305D1EF9CB8F006BB5F3 /* fire6_squeeze1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D301D1EF9CB8F006BB5F3 /* fire6_squeeze1x1_W.bin */; };
+		A50D305E1EF9CB8F006BB5F3 /* fire7_expand1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D301E1EF9CB8F006BB5F3 /* fire7_expand1x1_b.bin */; };
+		A50D305F1EF9CB8F006BB5F3 /* fire7_expand1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D301F1EF9CB8F006BB5F3 /* fire7_expand1x1_W.bin */; };
+		A50D30601EF9CB8F006BB5F3 /* fire7_expand3x3_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30201EF9CB8F006BB5F3 /* fire7_expand3x3_b.bin */; };
+		A50D30611EF9CB8F006BB5F3 /* fire7_expand3x3_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30211EF9CB8F006BB5F3 /* fire7_expand3x3_W.bin */; };
+		A50D30621EF9CB8F006BB5F3 /* fire7_squeeze1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30221EF9CB8F006BB5F3 /* fire7_squeeze1x1_b.bin */; };
+		A50D30631EF9CB8F006BB5F3 /* fire7_squeeze1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30231EF9CB8F006BB5F3 /* fire7_squeeze1x1_W.bin */; };
+		A50D30641EF9CB8F006BB5F3 /* fire8_expand1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30241EF9CB8F006BB5F3 /* fire8_expand1x1_b.bin */; };
+		A50D30651EF9CB8F006BB5F3 /* fire8_expand1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30251EF9CB8F006BB5F3 /* fire8_expand1x1_W.bin */; };
+		A50D30661EF9CB8F006BB5F3 /* fire8_expand3x3_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30261EF9CB8F006BB5F3 /* fire8_expand3x3_b.bin */; };
+		A50D30671EF9CB8F006BB5F3 /* fire8_expand3x3_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30271EF9CB8F006BB5F3 /* fire8_expand3x3_W.bin */; };
+		A50D30681EF9CB8F006BB5F3 /* fire8_squeeze1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30281EF9CB8F006BB5F3 /* fire8_squeeze1x1_b.bin */; };
+		A50D30691EF9CB8F006BB5F3 /* fire8_squeeze1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30291EF9CB8F006BB5F3 /* fire8_squeeze1x1_W.bin */; };
+		A50D306A1EF9CB8F006BB5F3 /* fire9_expand1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D302A1EF9CB8F006BB5F3 /* fire9_expand1x1_b.bin */; };
+		A50D306B1EF9CB8F006BB5F3 /* fire9_expand1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D302B1EF9CB8F006BB5F3 /* fire9_expand1x1_W.bin */; };
+		A50D306C1EF9CB8F006BB5F3 /* fire9_expand3x3_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D302C1EF9CB8F006BB5F3 /* fire9_expand3x3_b.bin */; };
+		A50D306D1EF9CB8F006BB5F3 /* fire9_expand3x3_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D302D1EF9CB8F006BB5F3 /* fire9_expand3x3_W.bin */; };
+		A50D306E1EF9CB8F006BB5F3 /* fire9_squeeze1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D302E1EF9CB8F006BB5F3 /* fire9_squeeze1x1_b.bin */; };
+		A50D306F1EF9CB8F006BB5F3 /* fire9_squeeze1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D302F1EF9CB8F006BB5F3 /* fire9_squeeze1x1_W.bin */; };
+		A50D30701EF9CB8F006BB5F3 /* fire10_expand1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30301EF9CB8F006BB5F3 /* fire10_expand1x1_b.bin */; };
+		A50D30711EF9CB8F006BB5F3 /* fire10_expand1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30311EF9CB8F006BB5F3 /* fire10_expand1x1_W.bin */; };
+		A50D30721EF9CB8F006BB5F3 /* fire10_expand3x3_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30321EF9CB8F006BB5F3 /* fire10_expand3x3_b.bin */; };
+		A50D30731EF9CB8F006BB5F3 /* fire10_expand3x3_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30331EF9CB8F006BB5F3 /* fire10_expand3x3_W.bin */; };
+		A50D30741EF9CB8F006BB5F3 /* fire10_squeeze1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30341EF9CB8F006BB5F3 /* fire10_squeeze1x1_b.bin */; };
+		A50D30751EF9CB8F006BB5F3 /* fire10_squeeze1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30351EF9CB8F006BB5F3 /* fire10_squeeze1x1_W.bin */; };
+		A50D30761EF9CB8F006BB5F3 /* fire11_expand1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30361EF9CB8F006BB5F3 /* fire11_expand1x1_b.bin */; };
+		A50D30771EF9CB8F006BB5F3 /* fire11_expand1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30371EF9CB8F006BB5F3 /* fire11_expand1x1_W.bin */; };
+		A50D30781EF9CB8F006BB5F3 /* fire11_expand3x3_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30381EF9CB8F006BB5F3 /* fire11_expand3x3_b.bin */; };
+		A50D30791EF9CB8F006BB5F3 /* fire11_expand3x3_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D30391EF9CB8F006BB5F3 /* fire11_expand3x3_W.bin */; };
+		A50D307A1EF9CB8F006BB5F3 /* fire11_squeeze1x1_b.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D303A1EF9CB8F006BB5F3 /* fire11_squeeze1x1_b.bin */; };
+		A50D307B1EF9CB8F006BB5F3 /* fire11_squeeze1x1_W.bin in Resources */ = {isa = PBXBuildFile; fileRef = A50D303B1EF9CB8F006BB5F3 /* fire11_squeeze1x1_W.bin */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B711CA21ECC8BF9001CB7C2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B711CA11ECC8BF9001CB7C2 /* Forge.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7B711C7E1ECC8B13001CB7C2 /* YOLO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YOLO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B711C861ECC8B13001CB7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B711C881ECC8B13001CB7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B711C8D1ECC8B13001CB7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B711C941ECC8B33001CB7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B711C951ECC8B33001CB7C2 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		7B711C9B1ECC8BBD001CB7C2 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		7B711C9C1ECC8BBD001CB7C2 /* YOLO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YOLO.swift; sourceTree = "<group>"; };
+		7B711C9F1ECC8BF9001CB7C2 /* Forge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Forge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B711CF21ECDA2D4001CB7C2 /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		A50D2FFC1EF9CB8F006BB5F3 /* conv1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = conv1_b.bin; path = Parameters/conv1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D2FFD1EF9CB8F006BB5F3 /* conv1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = conv1_W.bin; path = Parameters/conv1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D2FFE1EF9CB8F006BB5F3 /* conv12_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = conv12_b.bin; path = Parameters/conv12_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D2FFF1EF9CB8F006BB5F3 /* conv12_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = conv12_W.bin; path = Parameters/conv12_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30001EF9CB8F006BB5F3 /* fire2_expand1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire2_expand1x1_b.bin; path = Parameters/fire2_expand1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30011EF9CB8F006BB5F3 /* fire2_expand1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire2_expand1x1_W.bin; path = Parameters/fire2_expand1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30021EF9CB8F006BB5F3 /* fire2_expand3x3_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire2_expand3x3_b.bin; path = Parameters/fire2_expand3x3_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30031EF9CB8F006BB5F3 /* fire2_expand3x3_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire2_expand3x3_W.bin; path = Parameters/fire2_expand3x3_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30041EF9CB8F006BB5F3 /* fire2_squeeze1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire2_squeeze1x1_b.bin; path = Parameters/fire2_squeeze1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30051EF9CB8F006BB5F3 /* fire2_squeeze1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire2_squeeze1x1_W.bin; path = Parameters/fire2_squeeze1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30061EF9CB8F006BB5F3 /* fire3_expand1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire3_expand1x1_b.bin; path = Parameters/fire3_expand1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30071EF9CB8F006BB5F3 /* fire3_expand1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire3_expand1x1_W.bin; path = Parameters/fire3_expand1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30081EF9CB8F006BB5F3 /* fire3_expand3x3_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire3_expand3x3_b.bin; path = Parameters/fire3_expand3x3_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30091EF9CB8F006BB5F3 /* fire3_expand3x3_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire3_expand3x3_W.bin; path = Parameters/fire3_expand3x3_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D300A1EF9CB8F006BB5F3 /* fire3_squeeze1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire3_squeeze1x1_b.bin; path = Parameters/fire3_squeeze1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D300B1EF9CB8F006BB5F3 /* fire3_squeeze1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire3_squeeze1x1_W.bin; path = Parameters/fire3_squeeze1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D300C1EF9CB8F006BB5F3 /* fire4_expand1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire4_expand1x1_b.bin; path = Parameters/fire4_expand1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D300D1EF9CB8F006BB5F3 /* fire4_expand1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire4_expand1x1_W.bin; path = Parameters/fire4_expand1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D300E1EF9CB8F006BB5F3 /* fire4_expand3x3_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire4_expand3x3_b.bin; path = Parameters/fire4_expand3x3_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D300F1EF9CB8F006BB5F3 /* fire4_expand3x3_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire4_expand3x3_W.bin; path = Parameters/fire4_expand3x3_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30101EF9CB8F006BB5F3 /* fire4_squeeze1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire4_squeeze1x1_b.bin; path = Parameters/fire4_squeeze1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30111EF9CB8F006BB5F3 /* fire4_squeeze1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire4_squeeze1x1_W.bin; path = Parameters/fire4_squeeze1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30121EF9CB8F006BB5F3 /* fire5_expand1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire5_expand1x1_b.bin; path = Parameters/fire5_expand1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30131EF9CB8F006BB5F3 /* fire5_expand1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire5_expand1x1_W.bin; path = Parameters/fire5_expand1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30141EF9CB8F006BB5F3 /* fire5_expand3x3_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire5_expand3x3_b.bin; path = Parameters/fire5_expand3x3_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30151EF9CB8F006BB5F3 /* fire5_expand3x3_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire5_expand3x3_W.bin; path = Parameters/fire5_expand3x3_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30161EF9CB8F006BB5F3 /* fire5_squeeze1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire5_squeeze1x1_b.bin; path = Parameters/fire5_squeeze1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30171EF9CB8F006BB5F3 /* fire5_squeeze1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire5_squeeze1x1_W.bin; path = Parameters/fire5_squeeze1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30181EF9CB8F006BB5F3 /* fire6_expand1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire6_expand1x1_b.bin; path = Parameters/fire6_expand1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30191EF9CB8F006BB5F3 /* fire6_expand1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire6_expand1x1_W.bin; path = Parameters/fire6_expand1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D301A1EF9CB8F006BB5F3 /* fire6_expand3x3_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire6_expand3x3_b.bin; path = Parameters/fire6_expand3x3_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D301B1EF9CB8F006BB5F3 /* fire6_expand3x3_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire6_expand3x3_W.bin; path = Parameters/fire6_expand3x3_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D301C1EF9CB8F006BB5F3 /* fire6_squeeze1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire6_squeeze1x1_b.bin; path = Parameters/fire6_squeeze1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D301D1EF9CB8F006BB5F3 /* fire6_squeeze1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire6_squeeze1x1_W.bin; path = Parameters/fire6_squeeze1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D301E1EF9CB8F006BB5F3 /* fire7_expand1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire7_expand1x1_b.bin; path = Parameters/fire7_expand1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D301F1EF9CB8F006BB5F3 /* fire7_expand1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire7_expand1x1_W.bin; path = Parameters/fire7_expand1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30201EF9CB8F006BB5F3 /* fire7_expand3x3_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire7_expand3x3_b.bin; path = Parameters/fire7_expand3x3_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30211EF9CB8F006BB5F3 /* fire7_expand3x3_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire7_expand3x3_W.bin; path = Parameters/fire7_expand3x3_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30221EF9CB8F006BB5F3 /* fire7_squeeze1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire7_squeeze1x1_b.bin; path = Parameters/fire7_squeeze1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30231EF9CB8F006BB5F3 /* fire7_squeeze1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire7_squeeze1x1_W.bin; path = Parameters/fire7_squeeze1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30241EF9CB8F006BB5F3 /* fire8_expand1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire8_expand1x1_b.bin; path = Parameters/fire8_expand1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30251EF9CB8F006BB5F3 /* fire8_expand1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire8_expand1x1_W.bin; path = Parameters/fire8_expand1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30261EF9CB8F006BB5F3 /* fire8_expand3x3_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire8_expand3x3_b.bin; path = Parameters/fire8_expand3x3_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30271EF9CB8F006BB5F3 /* fire8_expand3x3_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire8_expand3x3_W.bin; path = Parameters/fire8_expand3x3_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30281EF9CB8F006BB5F3 /* fire8_squeeze1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire8_squeeze1x1_b.bin; path = Parameters/fire8_squeeze1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30291EF9CB8F006BB5F3 /* fire8_squeeze1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire8_squeeze1x1_W.bin; path = Parameters/fire8_squeeze1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D302A1EF9CB8F006BB5F3 /* fire9_expand1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire9_expand1x1_b.bin; path = Parameters/fire9_expand1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D302B1EF9CB8F006BB5F3 /* fire9_expand1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire9_expand1x1_W.bin; path = Parameters/fire9_expand1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D302C1EF9CB8F006BB5F3 /* fire9_expand3x3_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire9_expand3x3_b.bin; path = Parameters/fire9_expand3x3_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D302D1EF9CB8F006BB5F3 /* fire9_expand3x3_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire9_expand3x3_W.bin; path = Parameters/fire9_expand3x3_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D302E1EF9CB8F006BB5F3 /* fire9_squeeze1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire9_squeeze1x1_b.bin; path = Parameters/fire9_squeeze1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D302F1EF9CB8F006BB5F3 /* fire9_squeeze1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire9_squeeze1x1_W.bin; path = Parameters/fire9_squeeze1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30301EF9CB8F006BB5F3 /* fire10_expand1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire10_expand1x1_b.bin; path = Parameters/fire10_expand1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30311EF9CB8F006BB5F3 /* fire10_expand1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire10_expand1x1_W.bin; path = Parameters/fire10_expand1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30321EF9CB8F006BB5F3 /* fire10_expand3x3_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire10_expand3x3_b.bin; path = Parameters/fire10_expand3x3_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30331EF9CB8F006BB5F3 /* fire10_expand3x3_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire10_expand3x3_W.bin; path = Parameters/fire10_expand3x3_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30341EF9CB8F006BB5F3 /* fire10_squeeze1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire10_squeeze1x1_b.bin; path = Parameters/fire10_squeeze1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30351EF9CB8F006BB5F3 /* fire10_squeeze1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire10_squeeze1x1_W.bin; path = Parameters/fire10_squeeze1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30361EF9CB8F006BB5F3 /* fire11_expand1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire11_expand1x1_b.bin; path = Parameters/fire11_expand1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30371EF9CB8F006BB5F3 /* fire11_expand1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire11_expand1x1_W.bin; path = Parameters/fire11_expand1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D30381EF9CB8F006BB5F3 /* fire11_expand3x3_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire11_expand3x3_b.bin; path = Parameters/fire11_expand3x3_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D30391EF9CB8F006BB5F3 /* fire11_expand3x3_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire11_expand3x3_W.bin; path = Parameters/fire11_expand3x3_W.bin; sourceTree = SOURCE_ROOT; };
+		A50D303A1EF9CB8F006BB5F3 /* fire11_squeeze1x1_b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire11_squeeze1x1_b.bin; path = Parameters/fire11_squeeze1x1_b.bin; sourceTree = SOURCE_ROOT; };
+		A50D303B1EF9CB8F006BB5F3 /* fire11_squeeze1x1_W.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = fire11_squeeze1x1_W.bin; path = Parameters/fire11_squeeze1x1_W.bin; sourceTree = SOURCE_ROOT; };
+		A50F713D1F0D91FE00775057 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = YOLO/swix/objc/opencv2.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B711C7B1ECC8B13001CB7C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B711CA01ECC8BF9001CB7C2 /* Forge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B711C751ECC8B13001CB7C2 = {
+			isa = PBXGroup;
+			children = (
+				7B711C801ECC8B13001CB7C2 /* YOLO */,
+				7B711C7F1ECC8B13001CB7C2 /* Products */,
+				7B711C9F1ECC8BF9001CB7C2 /* Forge.framework */,
+				A50F713C1F0D91FE00775057 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7B711C7F1ECC8B13001CB7C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B711C7E1ECC8B13001CB7C2 /* YOLO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B711C801ECC8B13001CB7C2 /* YOLO */ = {
+			isa = PBXGroup;
+			children = (
+				7B711C981ECC8B37001CB7C2 /* Sources */,
+				7B711C931ECC8B33001CB7C2 /* Common */,
+				7B711C991ECC8B44001CB7C2 /* Parameters */,
+				7B711C851ECC8B13001CB7C2 /* Main.storyboard */,
+				7B711C881ECC8B13001CB7C2 /* Assets.xcassets */,
+				7B711C8D1ECC8B13001CB7C2 /* Info.plist */,
+			);
+			path = YOLO;
+			sourceTree = "<group>";
+		};
+		7B711C931ECC8B33001CB7C2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7B711C941ECC8B33001CB7C2 /* AppDelegate.swift */,
+				7B711C951ECC8B33001CB7C2 /* VideoCapture.swift */,
+			);
+			name = Common;
+			path = ../../Common;
+			sourceTree = "<group>";
+		};
+		7B711C981ECC8B37001CB7C2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7B711C9B1ECC8BBD001CB7C2 /* CameraViewController.swift */,
+				7B711CF21ECDA2D4001CB7C2 /* BoundingBox.swift */,
+				7B711C9C1ECC8BBD001CB7C2 /* YOLO.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		7B711C991ECC8B44001CB7C2 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				A50D2FFC1EF9CB8F006BB5F3 /* conv1_b.bin */,
+				A50D2FFD1EF9CB8F006BB5F3 /* conv1_W.bin */,
+				A50D2FFE1EF9CB8F006BB5F3 /* conv12_b.bin */,
+				A50D2FFF1EF9CB8F006BB5F3 /* conv12_W.bin */,
+				A50D30001EF9CB8F006BB5F3 /* fire2_expand1x1_b.bin */,
+				A50D30011EF9CB8F006BB5F3 /* fire2_expand1x1_W.bin */,
+				A50D30021EF9CB8F006BB5F3 /* fire2_expand3x3_b.bin */,
+				A50D30031EF9CB8F006BB5F3 /* fire2_expand3x3_W.bin */,
+				A50D30041EF9CB8F006BB5F3 /* fire2_squeeze1x1_b.bin */,
+				A50D30051EF9CB8F006BB5F3 /* fire2_squeeze1x1_W.bin */,
+				A50D30061EF9CB8F006BB5F3 /* fire3_expand1x1_b.bin */,
+				A50D30071EF9CB8F006BB5F3 /* fire3_expand1x1_W.bin */,
+				A50D30081EF9CB8F006BB5F3 /* fire3_expand3x3_b.bin */,
+				A50D30091EF9CB8F006BB5F3 /* fire3_expand3x3_W.bin */,
+				A50D300A1EF9CB8F006BB5F3 /* fire3_squeeze1x1_b.bin */,
+				A50D300B1EF9CB8F006BB5F3 /* fire3_squeeze1x1_W.bin */,
+				A50D300C1EF9CB8F006BB5F3 /* fire4_expand1x1_b.bin */,
+				A50D300D1EF9CB8F006BB5F3 /* fire4_expand1x1_W.bin */,
+				A50D300E1EF9CB8F006BB5F3 /* fire4_expand3x3_b.bin */,
+				A50D300F1EF9CB8F006BB5F3 /* fire4_expand3x3_W.bin */,
+				A50D30101EF9CB8F006BB5F3 /* fire4_squeeze1x1_b.bin */,
+				A50D30111EF9CB8F006BB5F3 /* fire4_squeeze1x1_W.bin */,
+				A50D30121EF9CB8F006BB5F3 /* fire5_expand1x1_b.bin */,
+				A50D30131EF9CB8F006BB5F3 /* fire5_expand1x1_W.bin */,
+				A50D30141EF9CB8F006BB5F3 /* fire5_expand3x3_b.bin */,
+				A50D30151EF9CB8F006BB5F3 /* fire5_expand3x3_W.bin */,
+				A50D30161EF9CB8F006BB5F3 /* fire5_squeeze1x1_b.bin */,
+				A50D30171EF9CB8F006BB5F3 /* fire5_squeeze1x1_W.bin */,
+				A50D30181EF9CB8F006BB5F3 /* fire6_expand1x1_b.bin */,
+				A50D30191EF9CB8F006BB5F3 /* fire6_expand1x1_W.bin */,
+				A50D301A1EF9CB8F006BB5F3 /* fire6_expand3x3_b.bin */,
+				A50D301B1EF9CB8F006BB5F3 /* fire6_expand3x3_W.bin */,
+				A50D301C1EF9CB8F006BB5F3 /* fire6_squeeze1x1_b.bin */,
+				A50D301D1EF9CB8F006BB5F3 /* fire6_squeeze1x1_W.bin */,
+				A50D301E1EF9CB8F006BB5F3 /* fire7_expand1x1_b.bin */,
+				A50D301F1EF9CB8F006BB5F3 /* fire7_expand1x1_W.bin */,
+				A50D30201EF9CB8F006BB5F3 /* fire7_expand3x3_b.bin */,
+				A50D30211EF9CB8F006BB5F3 /* fire7_expand3x3_W.bin */,
+				A50D30221EF9CB8F006BB5F3 /* fire7_squeeze1x1_b.bin */,
+				A50D30231EF9CB8F006BB5F3 /* fire7_squeeze1x1_W.bin */,
+				A50D30241EF9CB8F006BB5F3 /* fire8_expand1x1_b.bin */,
+				A50D30251EF9CB8F006BB5F3 /* fire8_expand1x1_W.bin */,
+				A50D30261EF9CB8F006BB5F3 /* fire8_expand3x3_b.bin */,
+				A50D30271EF9CB8F006BB5F3 /* fire8_expand3x3_W.bin */,
+				A50D30281EF9CB8F006BB5F3 /* fire8_squeeze1x1_b.bin */,
+				A50D30291EF9CB8F006BB5F3 /* fire8_squeeze1x1_W.bin */,
+				A50D302A1EF9CB8F006BB5F3 /* fire9_expand1x1_b.bin */,
+				A50D302B1EF9CB8F006BB5F3 /* fire9_expand1x1_W.bin */,
+				A50D302C1EF9CB8F006BB5F3 /* fire9_expand3x3_b.bin */,
+				A50D302D1EF9CB8F006BB5F3 /* fire9_expand3x3_W.bin */,
+				A50D302E1EF9CB8F006BB5F3 /* fire9_squeeze1x1_b.bin */,
+				A50D302F1EF9CB8F006BB5F3 /* fire9_squeeze1x1_W.bin */,
+				A50D30301EF9CB8F006BB5F3 /* fire10_expand1x1_b.bin */,
+				A50D30311EF9CB8F006BB5F3 /* fire10_expand1x1_W.bin */,
+				A50D30321EF9CB8F006BB5F3 /* fire10_expand3x3_b.bin */,
+				A50D30331EF9CB8F006BB5F3 /* fire10_expand3x3_W.bin */,
+				A50D30341EF9CB8F006BB5F3 /* fire10_squeeze1x1_b.bin */,
+				A50D30351EF9CB8F006BB5F3 /* fire10_squeeze1x1_W.bin */,
+				A50D30361EF9CB8F006BB5F3 /* fire11_expand1x1_b.bin */,
+				A50D30371EF9CB8F006BB5F3 /* fire11_expand1x1_W.bin */,
+				A50D30381EF9CB8F006BB5F3 /* fire11_expand3x3_b.bin */,
+				A50D30391EF9CB8F006BB5F3 /* fire11_expand3x3_W.bin */,
+				A50D303A1EF9CB8F006BB5F3 /* fire11_squeeze1x1_b.bin */,
+				A50D303B1EF9CB8F006BB5F3 /* fire11_squeeze1x1_W.bin */,
+			);
+			name = Parameters;
+			sourceTree = "<group>";
+		};
+		A50F713C1F0D91FE00775057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A50F713D1F0D91FE00775057 /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B711C7D1ECC8B13001CB7C2 /* YOLO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B711C901ECC8B13001CB7C2 /* Build configuration list for PBXNativeTarget "YOLO" */;
+			buildPhases = (
+				7B711C7A1ECC8B13001CB7C2 /* Sources */,
+				7B711C7B1ECC8B13001CB7C2 /* Frameworks */,
+				7B711C7C1ECC8B13001CB7C2 /* Resources */,
+				7B711CA21ECC8BF9001CB7C2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YOLO;
+			productName = YOLO;
+			productReference = 7B711C7E1ECC8B13001CB7C2 /* YOLO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B711C761ECC8B13001CB7C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MachineThink;
+				TargetAttributes = {
+					7B711C7D1ECC8B13001CB7C2 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 9F8A9NEDQ3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7B711C791ECC8B13001CB7C2 /* Build configuration list for PBXProject "YOLO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B711C751ECC8B13001CB7C2;
+			productRefGroup = 7B711C7F1ECC8B13001CB7C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B711C7D1ECC8B13001CB7C2 /* YOLO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B711C7C1ECC8B13001CB7C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50D30531EF9CB8F006BB5F3 /* fire5_expand1x1_W.bin in Resources */,
+				A50D30781EF9CB8F006BB5F3 /* fire11_expand3x3_b.bin in Resources */,
+				7B711C891ECC8B13001CB7C2 /* Assets.xcassets in Resources */,
+				A50D304D1EF9CB8F006BB5F3 /* fire4_expand1x1_W.bin in Resources */,
+				A50D30641EF9CB8F006BB5F3 /* fire8_expand1x1_b.bin in Resources */,
+				A50D30401EF9CB8F006BB5F3 /* fire2_expand1x1_b.bin in Resources */,
+				A50D30611EF9CB8F006BB5F3 /* fire7_expand3x3_W.bin in Resources */,
+				A50D30521EF9CB8F006BB5F3 /* fire5_expand1x1_b.bin in Resources */,
+				A50D30571EF9CB8F006BB5F3 /* fire5_squeeze1x1_W.bin in Resources */,
+				A50D30421EF9CB8F006BB5F3 /* fire2_expand3x3_b.bin in Resources */,
+				A50D30591EF9CB8F006BB5F3 /* fire6_expand1x1_W.bin in Resources */,
+				A50D307B1EF9CB8F006BB5F3 /* fire11_squeeze1x1_W.bin in Resources */,
+				A50D30661EF9CB8F006BB5F3 /* fire8_expand3x3_b.bin in Resources */,
+				A50D30631EF9CB8F006BB5F3 /* fire7_squeeze1x1_W.bin in Resources */,
+				A50D30581EF9CB8F006BB5F3 /* fire6_expand1x1_b.bin in Resources */,
+				A50D30761EF9CB8F006BB5F3 /* fire11_expand1x1_b.bin in Resources */,
+				A50D30541EF9CB8F006BB5F3 /* fire5_expand3x3_b.bin in Resources */,
+				A50D305F1EF9CB8F006BB5F3 /* fire7_expand1x1_W.bin in Resources */,
+				7B711C871ECC8B13001CB7C2 /* Main.storyboard in Resources */,
+				A50D30471EF9CB8F006BB5F3 /* fire3_expand1x1_W.bin in Resources */,
+				A50D304E1EF9CB8F006BB5F3 /* fire4_expand3x3_b.bin in Resources */,
+				A50D30411EF9CB8F006BB5F3 /* fire2_expand1x1_W.bin in Resources */,
+				A50D306A1EF9CB8F006BB5F3 /* fire9_expand1x1_b.bin in Resources */,
+				A50D30561EF9CB8F006BB5F3 /* fire5_squeeze1x1_b.bin in Resources */,
+				A50D305B1EF9CB8F006BB5F3 /* fire6_expand3x3_W.bin in Resources */,
+				A50D30751EF9CB8F006BB5F3 /* fire10_squeeze1x1_W.bin in Resources */,
+				A50D30601EF9CB8F006BB5F3 /* fire7_expand3x3_b.bin in Resources */,
+				A50D303E1EF9CB8F006BB5F3 /* conv12_b.bin in Resources */,
+				A50D30451EF9CB8F006BB5F3 /* fire2_squeeze1x1_W.bin in Resources */,
+				A50D30721EF9CB8F006BB5F3 /* fire10_expand3x3_b.bin in Resources */,
+				A50D30491EF9CB8F006BB5F3 /* fire3_expand3x3_W.bin in Resources */,
+				A50D303C1EF9CB8F006BB5F3 /* conv1_b.bin in Resources */,
+				A50D307A1EF9CB8F006BB5F3 /* fire11_squeeze1x1_b.bin in Resources */,
+				A50D306E1EF9CB8F006BB5F3 /* fire9_squeeze1x1_b.bin in Resources */,
+				A50D305C1EF9CB8F006BB5F3 /* fire6_squeeze1x1_b.bin in Resources */,
+				A50D30701EF9CB8F006BB5F3 /* fire10_expand1x1_b.bin in Resources */,
+				A50D30501EF9CB8F006BB5F3 /* fire4_squeeze1x1_b.bin in Resources */,
+				A50D30691EF9CB8F006BB5F3 /* fire8_squeeze1x1_W.bin in Resources */,
+				A50D304A1EF9CB8F006BB5F3 /* fire3_squeeze1x1_b.bin in Resources */,
+				A50D304C1EF9CB8F006BB5F3 /* fire4_expand1x1_b.bin in Resources */,
+				A50D30551EF9CB8F006BB5F3 /* fire5_expand3x3_W.bin in Resources */,
+				A50D30771EF9CB8F006BB5F3 /* fire11_expand1x1_W.bin in Resources */,
+				A50D30741EF9CB8F006BB5F3 /* fire10_squeeze1x1_b.bin in Resources */,
+				A50D30431EF9CB8F006BB5F3 /* fire2_expand3x3_W.bin in Resources */,
+				A50D30511EF9CB8F006BB5F3 /* fire4_squeeze1x1_W.bin in Resources */,
+				A50D30671EF9CB8F006BB5F3 /* fire8_expand3x3_W.bin in Resources */,
+				A50D30621EF9CB8F006BB5F3 /* fire7_squeeze1x1_b.bin in Resources */,
+				A50D303F1EF9CB8F006BB5F3 /* conv12_W.bin in Resources */,
+				A50D303D1EF9CB8F006BB5F3 /* conv1_W.bin in Resources */,
+				A50D30461EF9CB8F006BB5F3 /* fire3_expand1x1_b.bin in Resources */,
+				A50D30481EF9CB8F006BB5F3 /* fire3_expand3x3_b.bin in Resources */,
+				A50D305E1EF9CB8F006BB5F3 /* fire7_expand1x1_b.bin in Resources */,
+				A50D306D1EF9CB8F006BB5F3 /* fire9_expand3x3_W.bin in Resources */,
+				A50D30441EF9CB8F006BB5F3 /* fire2_squeeze1x1_b.bin in Resources */,
+				A50D304B1EF9CB8F006BB5F3 /* fire3_squeeze1x1_W.bin in Resources */,
+				A50D304F1EF9CB8F006BB5F3 /* fire4_expand3x3_W.bin in Resources */,
+				A50D30651EF9CB8F006BB5F3 /* fire8_expand1x1_W.bin in Resources */,
+				A50D30681EF9CB8F006BB5F3 /* fire8_squeeze1x1_b.bin in Resources */,
+				A50D30791EF9CB8F006BB5F3 /* fire11_expand3x3_W.bin in Resources */,
+				A50D305D1EF9CB8F006BB5F3 /* fire6_squeeze1x1_W.bin in Resources */,
+				A50D30711EF9CB8F006BB5F3 /* fire10_expand1x1_W.bin in Resources */,
+				A50D306C1EF9CB8F006BB5F3 /* fire9_expand3x3_b.bin in Resources */,
+				A50D306F1EF9CB8F006BB5F3 /* fire9_squeeze1x1_W.bin in Resources */,
+				A50D306B1EF9CB8F006BB5F3 /* fire9_expand1x1_W.bin in Resources */,
+				A50D305A1EF9CB8F006BB5F3 /* fire6_expand3x3_b.bin in Resources */,
+				A50D30731EF9CB8F006BB5F3 /* fire10_expand3x3_W.bin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B711C7A1ECC8B13001CB7C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B711CF31ECDA2D4001CB7C2 /* BoundingBox.swift in Sources */,
+				7B711C971ECC8B33001CB7C2 /* VideoCapture.swift in Sources */,
+				7B711C9D1ECC8BBD001CB7C2 /* CameraViewController.swift in Sources */,
+				7B711C961ECC8B33001CB7C2 /* AppDelegate.swift in Sources */,
+				7B711C9E1ECC8BBD001CB7C2 /* YOLO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B711C851ECC8B13001CB7C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B711C861ECC8B13001CB7C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B711C8E1ECC8B13001CB7C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B711C8F1ECC8B13001CB7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B711C911ECC8B13001CB7C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9F8A9NEDQ3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YOLO/swix/objc",
+					"$(PROJECT_DIR)/swix-master/swix/swix/swix/objc",
+					"$(PROJECT_DIR)/swix-master/swix_ios_app/swix_ios_app/swix/objc",
+					"$(PROJECT_DIR)/swix/objc",
+				);
+				GCC_OPTIMIZATION_LEVEL = s;
+				INFOPLIST_FILE = YOLO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.jordandYOLO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		7B711C921ECC8B13001CB7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9F8A9NEDQ3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YOLO/swix/objc",
+					"$(PROJECT_DIR)/swix-master/swix/swix/swix/objc",
+					"$(PROJECT_DIR)/swix-master/swix_ios_app/swix_ios_app/swix/objc",
+					"$(PROJECT_DIR)/swix/objc",
+				);
+				INFOPLIST_FILE = YOLO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.jordandYOLO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B711C791ECC8B13001CB7C2 /* Build configuration list for PBXProject "YOLO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B711C8E1ECC8B13001CB7C2 /* Debug */,
+				7B711C8F1ECC8B13001CB7C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B711C901ECC8B13001CB7C2 /* Build configuration list for PBXNativeTarget "YOLO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B711C911ECC8B13001CB7C2 /* Debug */,
+				7B711C921ECC8B13001CB7C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B711C761ECC8B13001CB7C2 /* Project object */;
+}

@@ -1,0 +1,12 @@
+PODS:
+  - TensorSwift (0.2.2)
+
+DEPENDENCIES:
+  - TensorSwift (~> 0.2)
+
+SPEC CHECKSUMS:
+  TensorSwift: 09217b0fb41272c6a178ba50b4bb01f2d10d88be
+
+PODFILE CHECKSUM: 324ea0b885fc94a272c729e94a65f2c88293f44a
+
+COCOAPODS: 1.2.1
